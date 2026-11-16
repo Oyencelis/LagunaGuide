@@ -775,6 +775,7 @@ p {
 /* Data Table Styling */
 .table-responsive {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
 }
@@ -792,13 +793,16 @@ p {
   font-weight: 600;
   color: var(--text-main);
   border-bottom: 2px solid var(--border-color);
-  white-space: nowrap;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .clean-table td {
   padding: 0.65rem 0.9rem;
   border-bottom: 1px solid var(--border-light);
   color: var(--text-main);
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .clean-table tr:last-child td {
@@ -809,6 +813,65 @@ p {
   font-weight: 700;
   background: #fbf8f5;
   border-top: 2px solid var(--border-color);
+}
+
+/* Mobile stacked table cards */
+@media (max-width: 600px) {
+  .table-responsive {
+    border: none;
+    background: transparent;
+  }
+
+  .clean-table thead {
+    display: none;
+  }
+
+  .clean-table,
+  .clean-table tbody,
+  .clean-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .clean-table tr {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    margin-bottom: 0.65rem;
+    overflow: hidden;
+    background: var(--bg-surface);
+  }
+
+  .clean-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.55rem 0.85rem;
+    border-bottom: 1px solid var(--border-light);
+    font-size: 0.84rem;
+    text-align: right;
+  }
+
+  .clean-table td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: var(--primary);
+    text-align: left;
+    flex-shrink: 0;
+    min-width: 110px;
+    max-width: 55%;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .clean-table td:last-child {
+    border-bottom: none;
+  }
+
+  .clean-table .total-row td {
+    background: #fbf8f5;
+    border-top: none;
+  }
 }
 
 /* System Architecture Zoom Card */
