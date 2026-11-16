@@ -274,6 +274,3 @@ If you reference this system, methodology, or dataset in academic research, plea
   <p><b>Laguna State Polytechnic University &bull; College of Computer Studies &bull; LTCATO Provincial Government</b></p>
   <p>&copy; 2026 LagunaGuide Capstone Research Team. All rights reserved.</p>
 </div>
-#   L a g u n a G u i d e 
- 
- 
