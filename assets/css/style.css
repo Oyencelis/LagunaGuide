@@ -24,7 +24,7 @@
   --bg-surface: #ffffff;
   --bg-muted: #f2eee8;
   --bg-dark: #1f1817;
-  
+
   --text-main: #1f1716;
   --text-muted: #5e514f;
   --text-light: #8a7b78;
@@ -37,7 +37,7 @@
   /* Typography */
   --font-heading: "Newsreader", Georgia, serif;
   --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  
+
   /* Layout & Elevations */
   --container-max: 1200px;
   --radius-sm: 6px;
@@ -50,14 +50,10 @@
 }
 
 /* Base Reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-}
-
-html,
-body {
-  overflow-x: hidden;
-  max-width: 100vw;
 }
 
 html {
@@ -67,6 +63,9 @@ html {
 
 body {
   margin: 0;
+  padding-top: 68px; /* offset for fixed header */
+  overflow-x: hidden;
+  max-width: 100vw;
   font-family: var(--font-sans);
   font-size: 1rem;
   line-height: 1.65;
@@ -124,7 +123,11 @@ button {
 }
 
 /* Typography Helpers */
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: var(--font-heading);
   font-weight: 500;
   color: var(--text-main);
@@ -193,9 +196,12 @@ p {
    ========================================================================== */
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
   background: rgba(36, 2, 6, 0.94);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -489,9 +495,18 @@ p {
   height: 9px;
   border-radius: 50%;
 }
-.dot-red { background: #ef4444; }
-.dot-amber { background: #f59e0b; }
-.dot-green { background: #10b981; }
+
+.dot-red {
+  background: #ef4444;
+}
+
+.dot-amber {
+  background: #f59e0b;
+}
+
+.dot-green {
+  background: #10b981;
+}
 
 .window-url {
   font-size: 0.75rem;
@@ -959,9 +974,18 @@ p {
   height: 8px;
   border-radius: 50%;
 }
-.b-red { background: #ef4444; }
-.b-amber { background: #f59e0b; }
-.b-green { background: #10b981; }
+
+.b-red {
+  background: #ef4444;
+}
+
+.b-amber {
+  background: #f59e0b;
+}
+
+.b-green {
+  background: #10b981;
+}
 
 .browser-title {
   font-size: 0.74rem;
@@ -984,7 +1008,8 @@ p {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: contain; /* CRUCIAL: Displays entire uncropped image */
+  object-fit: contain;
+  /* CRUCIAL: Displays entire uncropped image */
   transition: transform 0.25s ease;
 }
 
@@ -1539,7 +1564,8 @@ dialog.lightbox-dialog::backdrop {
   max-width: 94vw;
   width: auto;
   height: auto;
-  object-fit: contain; /* Full visibility, no cropping */
+  object-fit: contain;
+  /* Full visibility, no cropping */
   display: block;
 }
 
@@ -1580,12 +1606,12 @@ dialog.lightbox-dialog::backdrop {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
-  
+
   .overview-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .overview-sticky {
     position: static;
   }
@@ -1694,7 +1720,7 @@ dialog.lightbox-dialog::backdrop {
   .hero-actions {
     flex-direction: column;
   }
-  
+
   .hero-actions .btn {
     width: 100%;
   }
