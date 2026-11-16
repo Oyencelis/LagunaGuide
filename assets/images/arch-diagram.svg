@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%" style="background:#faf7f5; font-family:'Poppins', sans-serif;">
+  <defs>
+    <linearGradient id="maroonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a0404"/>
+      <stop offset="100%" stop-color="#9b2c2c"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5c842"/>
+      <stop offset="100%" stop-color="#d4af37"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#166534"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#4a0404" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#9b2c2c"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#166534"/>
+    </marker>
+  </defs>
+
+  <!-- Title Banner -->
+  <rect x="30" y="25" width="940" height="60" rx="12" fill="url(#maroonGrad)" filter="url(#cardShadow)"/>
+  <text x="50" y="62" font-size="20" font-weight="700" fill="#ffffff" font-family="'Libre Baskerville', serif">LagunaGuide System Architecture</text>
+  <text x="500" y="62" font-size="13" font-weight="500" fill="#fdf2d6">3-Tier Web Architecture with Multi-Stakeholder NLP Pipelines</text>
+
+  <!-- LAYER 1: CLIENT TIER (PRESENTATION) -->
+  <g transform="translate(30, 110)">
+    <rect x="0" y="0" width="940" height="150" rx="14" fill="#ffffff" stroke="#e6ded6" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="180" height="32" rx="12" fill="#9b2c2c"/>
+    <text x="16" y="21" font-size="12" font-weight="700" fill="#ffffff" letter-spacing="1">TIER 1: PRESENTATION</text>
+    
+    <!-- Client Submodules -->
+    <!-- Tourists -->
+    <rect x="25" y="48" width="205" height="85" rx="8" fill="#fbf8f5" stroke="#9b2c2c" stroke-width="1.5"/>
+    <circle cx="50" cy="72" r="14" fill="#9b2c2c"/>
+    <text x="50" y="77" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">👤</text>
+    <text x="75" y="70" font-size="13" font-weight="700" fill="#2a0202">Public Tourists</text>
+    <text x="75" y="86" font-size="11" fill="#66534e">Discovery &amp; 360° Tours</text>
+    <text x="75" y="102" font-size="10" fill="#9b2c2c" font-weight="600">LARA Tourist Chatbot</text>
+    <text x="75" y="117" font-size="10" fill="#66534e">Itinerary Generation</text>
+
+    <!-- Establishments -->
+    <rect x="255" y="48" width="205" height="85" rx="8" fill="#fbf8f5" stroke="#9b2c2c" stroke-width="1.5"/>
+    <circle cx="280" cy="72" r="14" fill="#9b2c2c"/>
+    <text x="280" y="77" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">🏨</text>
+    <text x="305" y="70" font-size="13" font-weight="700" fill="#2a0202">Establishment Owners</text>
+    <text x="305" y="86" font-size="11" fill="#66534e">Business Profile &amp; Proof</text>
+    <text x="305" y="102" font-size="10" fill="#9b2c2c" font-weight="600">Spot &amp; Promo Listing</text>
+    <text x="305" y="117" font-size="10" fill="#66534e">Visitor Feedback Reviews</text>
+
+    <!-- Municipal LGU -->
+    <rect x="485" y="48" width="205" height="85" rx="8" fill="#fbf8f5" stroke="#166534" stroke-width="1.5"/>
+    <circle cx="510" cy="72" r="14" fill="#166534"/>
+    <text x="510" y="77" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">🏛️</text>
+    <text x="535" y="70" font-size="13" font-weight="700" fill="#2a0202">Municipal LGU / MTO</text>
+    <text x="535" y="86" font-size="11" fill="#66534e">Arrival Entry &amp; Vetting</text>
+    <text x="535" y="102" font-size="10" fill="#166534" font-weight="600">Local Spot Validation</text>
+    <text x="535" y="117" font-size="10" fill="#66534e">MTO Analytics Dashboard</text>
+
+    <!-- LTCATO Provincial Staff / Super Admin -->
+    <rect x="715" y="48" width="200" height="85" rx="8" fill="#fbf8f5" stroke="#4a0404" stroke-width="2"/>
+    <circle cx="740" cy="72" r="14" fill="#4a0404"/>
+    <text x="740" y="77" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">👑</text>
+    <text x="765" y="70" font-size="13" font-weight="700" fill="#2a0202">LTCATO / Admin</text>
+    <text x="765" y="86" font-size="11" fill="#66534e">Provincial Oversight</text>
+    <text x="765" y="102" font-size="10" fill="#4a0404" font-weight="600">System DSS &amp; Policies</text>
+    <text x="765" y="117" font-size="10" fill="#66534e">30 LGUs Aggregation</text>
+  </g>
+
+  <!-- Connectors Layer 1 -> Layer 2 -->
+  <line x1="140" y1="260" x2="140" y2="295" stroke="#9b2c2c" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="370" y1="260" x2="370" y2="295" stroke="#9b2c2c" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="600" y1="260" x2="600" y2="295" stroke="#166534" stroke-width="2.5" marker-end="url(#arrowGreen)"/>
+  <line x1="820" y1="260" x2="820" y2="295" stroke="#9b2c2c" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- LAYER 2: APPLICATION & LOGIC TIER -->
+  <g transform="translate(30, 295)">
+    <rect x="0" y="0" width="940" height="190" rx="14" fill="#ffffff" stroke="#e6ded6" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="220" height="32" rx="12" fill="#4a0404"/>
+    <text x="16" y="21" font-size="12" font-weight="700" fill="#ffffff" letter-spacing="1">TIER 2: APPLICATION &amp; DSS</text>
+    
+    <!-- Submodules in Layer 2 -->
+    <!-- Module A: Authentication & RBAC -->
+    <rect x="25" y="48" width="205" height="120" rx="8" fill="#fdfaf7" stroke="#e6ded6" stroke-width="1.5"/>
+    <text x="35" y="72" font-size="13" font-weight="700" fill="#9b2c2c">Auth &amp; RBAC Control</text>
+    <text x="35" y="92" font-size="11" fill="#4a3f3a">• Role-Based Permissions</text>
+    <text x="35" y="109" font-size="11" fill="#4a3f3a">• Session Management</text>
+    <text x="35" y="126" font-size="11" fill="#4a3f3a">• Audit Log Tracker</text>
+    <text x="35" y="143" font-size="11" fill="#4a3f3a">• Verification Workflows</text>
+
+    <!-- Module B: LARA NLP Engine -->
+    <rect x="255" y="48" width="205" height="120" rx="8" fill="#fef9eb" stroke="#f5c842" stroke-width="2"/>
+    <text x="265" y="72" font-size="13" font-weight="700" fill="#9b2c2c">LARA NLP Engine</text>
+    <text x="265" y="92" font-size="11" fill="#4a3f3a">• Tourist NLP Assistant</text>
+    <text x="265" y="109" font-size="11" fill="#4a3f3a">• LGU Officer Assistant</text>
+    <text x="265" y="126" font-size="11" fill="#4a3f3a">• TF-IDF / Pattern Intent</text>
+    <text x="265" y="143" font-size="11" fill="#4a3f3a">• Context &amp; Itinerary Recom.</text>
+
+    <!-- Module C: DSS & Analytics Engine -->
+    <rect x="485" y="48" width="205" height="120" rx="8" fill="#fdfaf7" stroke="#e6ded6" stroke-width="1.5"/>
+    <text x="495" y="72" font-size="13" font-weight="700" fill="#9b2c2c">Decision Support (DSS)</text>
+    <text x="495" y="92" font-size="11" fill="#4a3f3a">• VADER Sentiment Analysis</text>
+    <text x="495" y="109" font-size="11" fill="#4a3f3a">• Arrival Trends &amp; Peaks</text>
+    <text x="495" y="126" font-size="11" fill="#4a3f3a">• Seasonal Forecasting</text>
+    <text x="495" y="143" font-size="11" fill="#4a3f3a">• Policy Recommendations</text>
+
+    <!-- Module D: Core Services & REST API -->
+    <rect x="715" y="48" width="200" height="120" rx="8" fill="#fdfaf7" stroke="#e6ded6" stroke-width="1.5"/>
+    <text x="725" y="72" font-size="13" font-weight="700" fill="#9b2c2c">Services &amp; REST API</text>
+    <text x="725" y="92" font-size="11" fill="#4a3f3a">• Spot Management API</text>
+    <text x="725" y="109" font-size="11" fill="#4a3f3a">• Arrival Data Ingestion</text>
+    <text x="725" y="126" font-size="11" fill="#4a3f3a">• Report Exporter (PDF/CSV)</text>
+    <text x="725" y="143" font-size="11" fill="#4a3f3a">• Feedback &amp; Ratings Pipe</text>
+  </g>
+
+  <!-- Connectors Layer 2 -> Layer 3 -->
+  <line x1="260" y1="485" x2="260" y2="520" stroke="#9b2c2c" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="720" y1="485" x2="720" y2="520" stroke="#9b2c2c" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- LAYER 3: DATA & EXTERNAL INTEGRATION TIER -->
+  <g transform="translate(30, 520)">
+    <rect x="0" y="0" width="940" height="145" rx="14" fill="#ffffff" stroke="#e6ded6" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="240" height="32" rx="12" fill="#166534"/>
+    <text x="16" y="21" font-size="12" font-weight="700" fill="#ffffff" letter-spacing="1">TIER 3: DATA &amp; CLOUD INFRA</text>
+
+    <!-- Database Box -->
+    <rect x="25" y="48" width="275" height="80" rx="8" fill="#f0fdf4" stroke="#166534" stroke-width="1.5"/>
+    <text x="40" y="74" font-size="13" font-weight="700" fill="#166534">PostgreSQL / Supabase DB</text>
+    <text x="40" y="94" font-size="11" fill="#333333">• 30 LGUs &amp; 150+ Verified Spots</text>
+    <text x="40" y="112" font-size="11" fill="#333333">• Monthly Arrival Logs &amp; User Accounts</text>
+
+    <!-- Storage Box -->
+    <rect x="330" y="48" width="275" height="80" rx="8" fill="#fef2f2" stroke="#9b2c2c" stroke-width="1.5"/>
+    <text x="345" y="74" font-size="13" font-weight="700" fill="#9b2c2c">Media &amp; Asset Cloud Storage</text>
+    <text x="345" y="94" font-size="11" fill="#333333">• High-Res Photos &amp; Verification Proofs</text>
+    <text x="345" y="112" font-size="11" fill="#333333">• Generated PDF Reports &amp; Exports</text>
+
+    <!-- External GIS & Maps -->
+    <rect x="635" y="48" width="280" height="80" rx="8" fill="#fffbeb" stroke="#f5c842" stroke-width="1.5"/>
+    <text x="650" y="74" font-size="13" font-weight="700" fill="#b45309">External APIs &amp; GIS Services</text>
+    <text x="650" y="94" font-size="11" fill="#333333">• OpenStreetMap &amp; Routing Leaflet</text>
+    <text x="650" y="112" font-size="11" fill="#333333">• Geocoding &amp; Interactive Navigation</text>
+  </g>
+</svg>

@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LagunaGuide: Tourism Promotion, Tourist Monitoring, and Decision Support System | LTCATO &amp; LSPU</title>
+  <meta name="description"
+    content="Official documentation and showcase for LagunaGuide: An Integrated Web-Based Tourism Promotion, Tourist Monitoring, and Decision Support System with NLP-Based Multi-Stakeholder Chatbots for LTCATO. Developed at Laguna State Polytechnic University.">
+  <meta name="theme-color" content="#3b050c">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/ltcato-logo.png">
+
+  <!-- Google Fonts: Newsreader (Editorial Serif) & Plus Jakarta Sans (Clean Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrap header-container">
+      <a class="brand" href="#hero" aria-label="LagunaGuide, back to top">
+        <img src="assets/images/ltcato-logo.png" alt="LTCATO Official Seal" class="brand-seal" width="36" height="36">
+        <div class="brand-names">
+          <span class="brand-title">LagunaGuide</span>
+          <span class="brand-dept">LTCATO &bull; LSPU CCS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#methodology">Methodology</a></li>
+          <li><a href="#system">System Showcase</a></li>
+          <li><a href="#results">Evaluation</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#links">Deliverables</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="https://new-ltcato.vercel.app/" target="_blank" rel="noopener noreferrer"
+            class="btn btn-primary btn-sm">
+            <span>Live Platform</span>
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Hamburger Toggle -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg class="icon" viewBox="0 0 24 24">
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="wrap hero-grid">
+
+        <div class="hero-content">
+          <div class="hero-accreditation">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <span>Undergraduate Capstone Project &bull; BS Information Technology &bull; LSPU Santa Cruz</span>
+          </div>
+
+          <h1>LagunaGuide</h1>
+          <p class="hero-subtitle">An Integrated Web-Based Tourism Promotion, Tourist Monitoring, and Decision Support
+            System with NLP-Based Multi-Stakeholder Chatbots for LTCATO</p>
+
+          <p class="hero-desc">
+            A unified provincial digital ecosystem connecting all <strong>30 Laguna LGUs</strong>, over <strong>150+
+              verified attractions</strong>, accredited establishments, and provincial planners into one intelligent
+            platform for real-time arrival compliance, algorithmic itinerary planning, and AI review sentiment
+            forecasting.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://new-ltcato.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <span>Open Live Platform</span>
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+            </a>
+            <a class="btn btn-outline" href="#methodology">
+              <span>View Methodology</span>
+            </a>
+            <a class="btn btn-outline" href="#system">
+              <span>System Showcase</span>
+            </a>
+          </div>
+
+          <!-- Highlight Metrics Bar -->
+          <div class="hero-chips-bar">
+            <div class="chip-item">
+              <span class="chip-num">30 / 30</span>
+              <span class="chip-label">Laguna LGUs Unified</span>
+            </div>
+            <div class="chip-item">
+              <span class="chip-num">150+</span>
+              <span class="chip-label">Verified Attractions</span>
+            </div>
+            <div class="chip-item">
+              <span class="chip-num">4 Roles</span>
+              <span class="chip-label">Stakeholder Portals</span>
+            </div>
+            <div class="chip-item">
+              <span class="chip-num">4.08 / 5.0</span>
+              <span class="chip-label">ISO/IEC 25010 Acceptability</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Real Screenshot Visual Mockup -->
+        <div class="hero-visual-card">
+          <div class="window-frame">
+            <div class="window-topbar">
+              <div class="window-dots">
+                <span class="dot-btn dot-red"></span>
+                <span class="dot-btn dot-amber"></span>
+                <span class="dot-btn dot-green"></span>
+              </div>
+              <span class="window-url">https://new-ltcato.vercel.app/explore</span>
+            </div>
+            <div class="browser-canvas" data-full="assets/images/map.png"
+              data-alt="LagunaGuide Public Attraction Explorer and Interactive Map">
+              <img src="assets/images/map.png" alt="LagunaGuide Public Attraction Explorer and Interactive Map"
+                class="hero-preview-img" width="1919" height="909">
+            </div>
+          </div>
+          <div class="hero-visual-caption">
+            <strong>Live Interface:</strong> Public Attraction Explorer and Interactive GIS Map across Laguna's 4
+            legislative districts.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 1: OVERVIEW & 4 STAKEHOLDER PORTALS -->
+    <section class="section" id="overview">
+      <div class="wrap overview-grid">
+
+        <div class="overview-sticky">
+          <span class="section-eyebrow">Provincial Infrastructure</span>
+          <h2>What LagunaGuide Does</h2>
+          <p class="lede">
+            Unifying fragmented tourism promotion and automating monthly arrival compliance across the Province of
+            Laguna.
+          </p>
+        </div>
+
+        <div class="prose-block">
+          <p>
+            The Province of Laguna is home to 30 Local Government Units (6 Cities and 24 Municipalities), each boasting
+            unique historical heritage, cultural festivals, volcanic lakes, and ancestral craft traditions. However,
+            tourism administration in the province was previously constrained by fragmented promotional channels, manual
+            pen-and-paper query handling, and delayed monthly tourist arrival consolidation submitted via physical mail
+            or unstandardized spreadsheets to the <strong>Laguna Tourism, Culture, Arts and Trade Office
+              (LTCATO)</strong>.
+          </p>
+
+          <p>
+            LagunaGuide addresses these structural hurdles through an integrated web ecosystem. It establishes a
+            standardized digital ingestion pipeline for Municipal Tourism Officers (MTOs) to log domestic and foreign
+            arrival counts under Department of Tourism (DOT) standards, deploys a dual-role Natural Language Processing
+            (NLP) chatbot named <strong>LARA</strong> to handle both public tourist inquiries and administrative officer
+            workflows, and equips provincial decision-makers with VADER review sentiment analysis and seasonal influx
+            forecasting.
+          </p>
+
+          <div class="scope-notice">
+            <strong>Scope &amp; Governance Mandate:</strong> LagunaGuide was engineered in direct coordination with
+            LTCATO, Provincial Capitol Complex, Santa Cruz, Laguna. It serves as an official decision-support and
+            arrival monitoring system to streamline provincial data reporting and facilitate data-backed tourism policy.
+          </div>
+
+          <!-- 4 Stakeholder Portals -->
+          <div class="stakeholders-grid">
+
+            <div class="stakeholder-card">
+              <span class="role-badge">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+                Tourist Portal
+              </span>
+              <h3>Public Tourists</h3>
+              <p class="role-desc">Empowers travelers with verified provincial spots, algorithmic travel circuits, and
+                instant AI guidance.</p>
+              <ul class="role-checklist">
+                <li><svg class="icon icon-check" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg> 150+ verified attractions categorized by district &amp; vibe</li>
+                <li><svg class="icon icon-check" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg> Smart itinerary generator optimized by budget &amp; duration</li>
+                <li><svg class="icon icon-check" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg> LARA NLP chatbot for real-time operating hours and directions</li>
+              </ul>
+            </div>
+
+            <div class="stakeholder-card">
+              <span class="role-badge">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <path d="M3 21h18" />
+                  <path d="M9 8h1" />
+                  <path d="M9 12h1" />
+                  <path d="M9 16h1" />
+                  <path d="M14 8h1" />
+                  <path d="M14 12h1" />
+                  <path d="M14 16h1" />
+                  <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16" />
+                </svg>
+                Business Portal
+              </span>
+              <h3>Establishment Owners</h3>
+              <p class="role-desc">Allows resorts, boutique hotels, and restaurants to manage accredited listings and
+                monitor guest feedback.</p>
+              <ul class="role-checklist">
+                <li><svg class="icon icon-check" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg> Business registration and DOT accreditation verification</li>
+                <li><svg class="icon icon-check" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg> Promotional package updates and operational hour controls</li>
+                <li><svg class="icon icon-check" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg> Visitor sentiment scores and guest review oversight</li>
+              </ul>
+            </div>
+
+            <div class="stakeholder-card">
+              <span class="role-badge">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="8.5" cy="7" r="4" />
+                  <line x1="20" y1="8" x2="20" y2="14" />
+                  <line x1="23" y1="11" x2="17" y2="11" />
+                </svg>
+                Municipal Portal
+              </span>
+              <h3>Municipal Tourism Offices</h3>
+              <p class="role-desc">Digitizes monthly arrival submission across 30 LGUs, replacing delayed physical
+                logbook consolidation.</p>
+              <ul class="role-checklist">
+                <li><svg class="icon icon-check" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg> Monthly same-day, overnight, and foreign visitor intake</li>
+                <li><svg class="icon icon-check" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg> Municipal attraction vetting and verification approvals</li>
+                <li><svg class="icon icon-check" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg> LARA regulatory guidance for DOT compliance deadlines</li>
+              </ul>
+            </div>
+
+            <div class="stakeholder-card">
+              <span class="role-badge">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                Provincial Portal
+              </span>
+              <h3>LTCATO Provincial Admin</h3>
+              <p class="role-desc">Provides provincial administrators with real-time data aggregation, review sentiment,
+                and policy intelligence.</p>
+              <ul class="role-checklist">
+                <li><svg class="icon icon-check" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg> 30 LGUs real-time arrival consolidation across 4 districts</li>
+                <li><svg class="icon icon-check" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg> VADER sentiment analysis detecting tourist congestion and issues</li>
+                <li><svg class="icon icon-check" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg> Automated PDF and CSV reporting for Department of Tourism</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: CHAPTER III RESEARCH METHODOLOGY -->
+    <section class="section section-tint" id="methodology">
+      <div class="wrap">
+
+        <div class="section-head text-center">
+          <span class="section-eyebrow">Academic Research Foundation</span>
+          <h2>Research Methodology</h2>
+          <p class="lede">
+            Extracted directly from Chapter III of the Capstone Project Manuscript: A descriptive-developmental research
+            design executing 6 Agile development sprints, technical black-box testing, and empirical ISO/IEC 25010
+            evaluation.
+          </p>
+        </div>
+
+        <!-- 4-Phase Core Research Design -->
+        <div class="methodology-framework">
+
+          <div class="method-phase-card">
+            <span class="phase-number">Phase 1</span>
+            <h3>Descriptive Research</h3>
+            <p>Conducted field interviews, workflow mapping, and needs assessments across LTCATO leadership and
+              municipal tourism staff to identify operational bottlenecks in arrival logging and query handling.</p>
+          </div>
+
+          <div class="method-phase-card">
+            <span class="phase-number">Phase 2</span>
+            <h3>Agile Development</h3>
+            <p>Executed sprint-based developmental cycles comprising requirement engineering, 3-tier architecture
+              design, Flask/Python backend API creation, Supabase PostgreSQL modeling, and LARA NLP training.</p>
+          </div>
+
+          <div class="method-phase-card">
+            <span class="phase-number">Phase 3</span>
+            <h3>Black-Box Testing</h3>
+            <p>Subjected all system modules, RBAC authentication security, data ingestion routines, and sentiment
+              algorithms to rigorous functional verification by 10 qualified technical IT testers.</p>
+          </div>
+
+          <div class="method-phase-card">
+            <span class="phase-number">Phase 4</span>
+            <h3>ISO/IEC 25010 Evaluation</h3>
+            <p>Administered standardized survey instruments across 204 active stakeholders to evaluate software quality
+              across 9 characteristics: Functional Suitability, Reliability, Performance, Security, and more.</p>
+          </div>
+
+        </div>
+
+        <!-- Agile SDLC 6 Sprints Visual -->
+        <div class="agile-section">
+          <div class="agile-header">
+            <div>
+              <h3>Agile Software Development Model (SDLC)</h3>
+              <p class="lede" style="margin-bottom: 0; font-size: 0.95rem;">Iterative sprint progression applied
+                throughout the developmental phase of LagunaGuide (Section 3.7.1).</p>
+            </div>
+            <span class="btn btn-primary btn-sm" style="pointer-events: none;">Iterative ASD Cycles</span>
+          </div>
+
+          <div class="agile-steps-grid">
+
+            <div class="agile-step-box">
+              <span class="step-badge">Sprint 1</span>
+              <h4>Planning</h4>
+              <p class="step-details">Stakeholder requirement elicitation, feature scoping for 30 LGUs, and feasibility
+                assessment.</p>
+            </div>
+
+            <div class="agile-step-box">
+              <span class="step-badge">Sprint 2</span>
+              <h4>System Design</h4>
+              <p class="step-details">ERD database structuring, 3-tier layered architecture, and UI/UX mockup
+                prototyping.</p>
+            </div>
+
+            <div class="agile-step-box">
+              <span class="step-badge">Sprint 3</span>
+              <h4>Development</h4>
+              <p class="step-details">Backend RESTful API implementation, LARA NLP pipeline training, and VADER
+                sentiment integration.</p>
+            </div>
+
+            <div class="agile-step-box">
+              <span class="step-badge">Sprint 4</span>
+              <h4>Testing</h4>
+              <p class="step-details">Comprehensive Black-Box validation across 10 IT evaluators, boundary tests, and
+                error handling.</p>
+            </div>
+
+            <div class="agile-step-box">
+              <span class="step-badge">Sprint 5</span>
+              <h4>Deployment</h4>
+              <p class="step-details">Production launch on Vercel with PostgreSQL cloud database hosting on Supabase.
+              </p>
+            </div>
+
+            <div class="agile-step-box">
+              <span class="step-badge">Sprint 6</span>
+              <h4>Maintenance</h4>
+              <p class="step-details">Continuous audit logging, arrival database synchronization, and regulatory DOT
+                updates.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Testing & Sampling Tables (Chapter III Manuscript Data) -->
+        <div class="methodology-dual-cols">
+
+          <!-- Table 2: Profile of System Testers -->
+          <div class="method-card-panel">
+            <h3>Black-Box Technical Testers (Table 2)</h3>
+            <p class="panel-intro">10 qualified IT professionals who conducted functional black-box verification
+              (Manuscript Section 3.3):</p>
+
+            <div class="table-responsive">
+              <table class="clean-table">
+                <thead>
+                  <tr>
+                    <th>Tester Name</th>
+                    <th>Current Position / Specialization</th>
+                    <th>Experience</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Elchier Santos Lontoc</strong></td>
+                    <td>Chief Technology Officer</td>
+                    <td>7 years</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Ferdinand T. Celis</strong></td>
+                    <td>Website Developer</td>
+                    <td>6 years</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Mike Angelo Matrido</strong></td>
+                    <td>Information Security Officer</td>
+                    <td>13 years</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Roswell James Vitaliz</strong></td>
+                    <td>IT Specialist - Cybersecurity</td>
+                    <td>5 years</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Christine Nicole Valdellon</strong></td>
+                    <td>Junior Flutter Engineer</td>
+                    <td>5 years</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Jovert A. Lobinia</strong></td>
+                    <td>Technical Support Specialist</td>
+                    <td>5 years</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Raina Gemanel</strong></td>
+                    <td>Web Developer</td>
+                    <td>4 years</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Jomari S. Borje</strong></td>
+                    <td>IT Instructor</td>
+                    <td>2 years</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Juliemar Añonuevo</strong></td>
+                    <td>Marketing &amp; Tech Strategist</td>
+                    <td>3 years</td>
+                  </tr>
+                  <tr>
+                    <td><strong>John Lloyd E. Ramos</strong></td>
+                    <td>Software Developer</td>
+                    <td>4 years</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Table 3: Frequency Distribution of Respondents -->
+          <div class="method-card-panel">
+            <h3>Evaluation Sampling Design (Table 3)</h3>
+            <p class="panel-intro">Total enumeration and Slovin's formula (7% margin of error) across 204 stakeholders
+              (Manuscript Section 3.4):</p>
+
+            <div class="table-responsive">
+              <table class="clean-table">
+                <thead>
+                  <tr>
+                    <th>Stakeholder Category</th>
+                    <th style="text-align: right;">Sample Size</th>
+                    <th style="text-align: right;">Percentage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Public Tourists (Local &amp; Foreign)</td>
+                    <td style="text-align: right; font-weight: 600;">92</td>
+                    <td style="text-align: right;">45.10%</td>
+                  </tr>
+                  <tr>
+                    <td>Municipal Tourism Office (MTO) Staff</td>
+                    <td style="text-align: right; font-weight: 600;">90</td>
+                    <td style="text-align: right;">44.12%</td>
+                  </tr>
+                  <tr>
+                    <td>LTCATO Provincial Staff</td>
+                    <td style="text-align: right; font-weight: 600;">15</td>
+                    <td style="text-align: right;">7.35%</td>
+                  </tr>
+                  <tr>
+                    <td>Establishment Owners / Managers</td>
+                    <td style="text-align: right; font-weight: 600;">6</td>
+                    <td style="text-align: right;">2.94%</td>
+                  </tr>
+                  <tr>
+                    <td>LTCATO System Administrator</td>
+                    <td style="text-align: right; font-weight: 600;">1</td>
+                    <td style="text-align: right;">0.49%</td>
+                  </tr>
+                  <tr class="total-row">
+                    <td>Total Evaluated Sample</td>
+                    <td style="text-align: right;">204</td>
+                    <td style="text-align: right;">100.00%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="scope-notice" style="margin-top: 1.25rem; font-size: 0.86rem;">
+              <strong>Sampling Protocol:</strong> Total enumeration was applied to LTCATO and MTO staff to survey the
+              full administrative population. Stratified random sampling was applied to tourists and establishment
+              owners using Slovin's technique.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- System Architecture Callout -->
+        <div class="architecture-callout">
+          <h3>3-Tier Layered Architecture</h3>
+          <p class="lede" style="margin-inline: auto; font-size: 0.95rem;">
+            Decoupled presentation tier (Leaflet GIS, modern HTML5/ES6), application tier (Python Flask, LARA NLP, VADER
+            Sentiment), and Supabase cloud data storage. Click the diagram to inspect in full resolution:
+          </p>
+          <div class="arch-preview-wrap browser-canvas" data-full="assets/images/arch-diagram.svg"
+            data-alt="LagunaGuide 3-Tier Layered Architecture Diagram">
+            <img src="assets/images/arch-diagram.svg" alt="LagunaGuide 3-Tier Layered Architecture Diagram" width="1000"
+              height="700">
+          </div>
+          <button class="btn btn-secondary btn-sm btn-zoom-trigger" data-full="assets/images/arch-diagram.svg"
+            data-alt="LagunaGuide 3-Tier Layered Architecture Diagram">
+            <svg class="icon" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg>
+            <span>Enlarge Architecture Diagram</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: SYSTEM SHOWCASE (REAL ASSETS - NO CROPPING) -->
+    <section class="section" id="system">
+      <div class="wrap">
+
+        <div class="section-head text-center">
+          <span class="section-eyebrow">Interface Showcase</span>
+          <h2>System Modules &amp; Live Interfaces</h2>
+          <p class="lede">
+            Authentic full-resolution interface captures of LagunaGuide across all functional operational modules. Click
+            any screenshot or button to view full resolution without cropping.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+
+          <!-- Item 1: Interactive Map -->
+          <div class="showcase-card">
+            <div class="browser-frame">
+              <div class="browser-header">
+                <div class="browser-dots">
+                  <span class="browser-dot b-red"></span>
+                  <span class="browser-dot b-amber"></span>
+                  <span class="browser-dot b-green"></span>
+                </div>
+                <span class="browser-title">map.png &bull; Public Attraction Explorer</span>
+              </div>
+              <div class="browser-canvas" data-full="assets/images/map.png"
+                data-alt="Public Attraction Explorer and Interactive GIS Map">
+                <img src="assets/images/map.png" alt="Public Attraction Explorer and Interactive GIS Map"
+                  class="screenshot-img" width="1919" height="909" loading="lazy">
+              </div>
+            </div>
+            <div class="showcase-content">
+              <span class="showcase-tag">Public Discovery</span>
+              <h3>Attraction Explorer &amp; Map</h3>
+              <p class="showcase-desc">
+                Interactive geospatial discovery portal indexing over 150 verified attractions across all 30 LGUs,
+                featuring category filtering (eco-tourism, cultural heritage, lakes, culinary), detailed spot profiles,
+                and verified ratings.
+              </p>
+              <div class="showcase-footer">
+                <span style="font-size: 0.82rem; color: var(--text-muted);">1919 &times; 909 Native Resolution</span>
+                <button class="btn-zoom" data-full="assets/images/map.png"
+                  data-alt="Public Attraction Explorer and Interactive GIS Map">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" y2="14" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  <span>View Full Image</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: LARA Chatbot -->
+          <div class="showcase-card">
+            <div class="browser-frame">
+              <div class="browser-header">
+                <div class="browser-dots">
+                  <span class="browser-dot b-red"></span>
+                  <span class="browser-dot b-amber"></span>
+                  <span class="browser-dot b-green"></span>
+                </div>
+                <span class="browser-title">chat.png &bull; LARA Multi-Stakeholder AI Assistant</span>
+              </div>
+              <div class="browser-canvas" data-full="assets/images/chat.png"
+                data-alt="LARA Multi-Stakeholder NLP Chatbot Assistant">
+                <img src="assets/images/chat.png" alt="LARA Multi-Stakeholder NLP Chatbot Assistant"
+                  class="screenshot-img" width="1898" height="592" loading="lazy">
+              </div>
+            </div>
+            <div class="showcase-content">
+              <span class="showcase-tag">NLP Intelligence</span>
+              <h3>LARA Multi-Stakeholder Chatbot</h3>
+              <p class="showcase-desc">
+                Dual-role Natural Language Processing conversational assistant. Delivers personalized spot
+                recommendations and travel guidance to tourists while assisting municipal officers with reporting
+                guidelines.
+              </p>
+              <div class="showcase-footer">
+                <span style="font-size: 0.82rem; color: var(--text-muted);">1898 &times; 592 Native Resolution</span>
+                <button class="btn-zoom" data-full="assets/images/chat.png"
+                  data-alt="LARA Multi-Stakeholder NLP Chatbot Assistant">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" y2="14" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  <span>View Full Image</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Smart Itinerary Plan -->
+          <div class="showcase-card">
+            <div class="browser-frame">
+              <div class="browser-header">
+                <div class="browser-dots">
+                  <span class="browser-dot b-red"></span>
+                  <span class="browser-dot b-amber"></span>
+                  <span class="browser-dot b-green"></span>
+                </div>
+                <span class="browser-title">plan.png &bull; Smart Itinerary Generator</span>
+              </div>
+              <div class="browser-canvas" data-full="assets/images/plan.png"
+                data-alt="Algorithmic Smart Itinerary Planning Module">
+                <img src="assets/images/plan.png" alt="Algorithmic Smart Itinerary Planning Module"
+                  class="screenshot-img" width="1906" height="909" loading="lazy">
+              </div>
+            </div>
+            <div class="showcase-content">
+              <span class="showcase-tag">Algorithmic Route</span>
+              <h3>Smart Itinerary Generator</h3>
+              <p class="showcase-desc">
+                Optimizes multi-stop trips across Laguna by factoring in budget constraints, operating schedules,
+                proximity clustering, and travel durations across the province's four legislative districts.
+              </p>
+              <div class="showcase-footer">
+                <span style="font-size: 0.82rem; color: var(--text-muted);">1906 &times; 909 Native Resolution</span>
+                <button class="btn-zoom" data-full="assets/images/plan.png"
+                  data-alt="Algorithmic Smart Itinerary Planning Module">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" y2="14" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  <span>View Full Image</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: MTO Arrival Ingestion -->
+          <div class="showcase-card">
+            <div class="browser-frame">
+              <div class="browser-header">
+                <div class="browser-dots">
+                  <span class="browser-dot b-red"></span>
+                  <span class="browser-dot b-amber"></span>
+                  <span class="browser-dot b-green"></span>
+                </div>
+                <span class="browser-title">arrivals.png &bull; MTO Tourist Arrival Ingestion</span>
+              </div>
+              <div class="browser-canvas" data-full="assets/images/arrivals.png"
+                data-alt="MTO Tourist Arrival Ingestion &amp; Submission Tracker">
+                <img src="assets/images/arrivals.png" alt="MTO Tourist Arrival Ingestion &amp; Submission Tracker"
+                  class="screenshot-img" width="1917" height="892" loading="lazy">
+              </div>
+            </div>
+            <div class="showcase-content">
+              <span class="showcase-tag">Arrival Compliance</span>
+              <h3>MTO Tourist Arrival Ingestion</h3>
+              <p class="showcase-desc">
+                Centralized intake portal where Municipal Tourism Officers submit monthly visitor arrivals categorized
+                by domestic, foreign, same-day, and overnight stays, replacing physical paper logs.
+              </p>
+              <div class="showcase-footer">
+                <span style="font-size: 0.82rem; color: var(--text-muted);">1917 &times; 892 Native Resolution</span>
+                <button class="btn-zoom" data-full="assets/images/arrivals.png"
+                  data-alt="MTO Tourist Arrival Ingestion &amp; Submission Tracker">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" y2="14" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  <span>View Full Image</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Decision Support & Sentiment -->
+          <div class="showcase-card">
+            <div class="browser-frame">
+              <div class="browser-header">
+                <div class="browser-dots">
+                  <span class="browser-dot b-red"></span>
+                  <span class="browser-dot b-amber"></span>
+                  <span class="browser-dot b-green"></span>
+                </div>
+                <span class="browser-title">dss.png &bull; Decision Support System (DSS)</span>
+              </div>
+              <div class="browser-canvas" data-full="assets/images/dss.png"
+                data-alt="Decision Support System with VADER Sentiment and Arrival Forecasting">
+                <img src="assets/images/dss.png"
+                  alt="Decision Support System with VADER Sentiment and Arrival Forecasting" class="screenshot-img"
+                  width="1896" height="905" loading="lazy">
+              </div>
+            </div>
+            <div class="showcase-content">
+              <span class="showcase-tag">Analytics &amp; Forecasting</span>
+              <h3>Decision Support &amp; Sentiment</h3>
+              <p class="showcase-desc">
+                Integrated VADER sentiment analysis engine classifying tourist reviews into positive, neutral, and
+                negative themes, paired with predictive seasonal arrival surge modeling.
+              </p>
+              <div class="showcase-footer">
+                <span style="font-size: 0.82rem; color: var(--text-muted);">1896 &times; 905 Native Resolution</span>
+                <button class="btn-zoom" data-full="assets/images/dss.png"
+                  data-alt="Decision Support System with VADER Sentiment and Arrival Forecasting">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" y2="14" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  <span>View Full Image</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6: Executive Analytics Dashboard -->
+          <div class="showcase-card">
+            <div class="browser-frame">
+              <div class="browser-header">
+                <div class="browser-dots">
+                  <span class="browser-dot b-red"></span>
+                  <span class="browser-dot b-amber"></span>
+                  <span class="browser-dot b-green"></span>
+                </div>
+                <span class="browser-title">analytics.png &bull; Provincial Executive Command Center</span>
+              </div>
+              <div class="browser-canvas" data-full="assets/images/analytics.png"
+                data-alt="LTCATO Provincial Executive Analytics Dashboard">
+                <img src="assets/images/analytics.png" alt="LTCATO Provincial Executive Analytics Dashboard"
+                  class="screenshot-img" width="1904" height="903" loading="lazy">
+              </div>
+            </div>
+            <div class="showcase-content">
+              <span class="showcase-tag">Executive Oversight</span>
+              <h3>Provincial Analytics Command Center</h3>
+              <p class="showcase-desc">
+                High-level provincial monitoring dashboard tracking district compliance rates, annual arrivals (1.48M+),
+                verified attraction inventories, and Department of Tourism report export status.
+              </p>
+              <div class="showcase-footer">
+                <span style="font-size: 0.82rem; color: var(--text-muted);">1904 &times; 903 Native Resolution</span>
+                <button class="btn-zoom" data-full="assets/images/analytics.png"
+                  data-alt="LTCATO Provincial Executive Analytics Dashboard">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" y2="14" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  <span>View Full Image</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: EVALUATION & RESULTS -->
+    <section class="section section-tint" id="results">
+      <div class="wrap">
+
+        <div class="section-head text-center">
+          <span class="section-eyebrow">Empirical Results</span>
+          <h2>Software Quality &amp; Evaluation</h2>
+          <p class="lede">
+            Validated by 204 stakeholders across the Province of Laguna using the international ISO/IEC 25010 software
+            quality standard.
+          </p>
+        </div>
+
+        <div class="evaluation-grid">
+
+          <!-- ISO Breakdown -->
+          <div class="iso-ratings-card">
+            <div class="grand-mean-banner">
+              <div>
+                <span class="gm-title">Overall Weighted Mean Rating</span>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">Standard: ISO/IEC 25010 Model (N = 204)</div>
+              </div>
+              <div class="gm-score">4.08 / 5.00</div>
+            </div>
+
+            <div class="iso-metrics-stack">
+
+              <div class="iso-metric-row">
+                <div class="iso-metric-info">
+                  <span class="m-name">1. Reliability</span>
+                  <span class="m-val">4.13 / 5.00</span>
+                </div>
+                <div class="iso-meter-bg">
+                  <div class="iso-meter-fill" style="width: 82.6%;"></div>
+                </div>
+              </div>
+
+              <div class="iso-metric-row">
+                <div class="iso-metric-info">
+                  <span class="m-name">2. Flexibility</span>
+                  <span class="m-val">4.11 / 5.00</span>
+                </div>
+                <div class="iso-meter-bg">
+                  <div class="iso-meter-fill" style="width: 82.2%;"></div>
+                </div>
+              </div>
+
+              <div class="iso-metric-row">
+                <div class="iso-metric-info">
+                  <span class="m-name">3. Compatibility</span>
+                  <span class="m-val">4.09 / 5.00</span>
+                </div>
+                <div class="iso-meter-bg">
+                  <div class="iso-meter-fill" style="width: 81.8%;"></div>
+                </div>
+              </div>
+
+              <div class="iso-metric-row">
+                <div class="iso-metric-info">
+                  <span class="m-name">4. Safety</span>
+                  <span class="m-val">4.09 / 5.00</span>
+                </div>
+                <div class="iso-meter-bg">
+                  <div class="iso-meter-fill" style="width: 81.8%;"></div>
+                </div>
+              </div>
+
+              <div class="iso-metric-row">
+                <div class="iso-metric-info">
+                  <span class="m-name">5. Security</span>
+                  <span class="m-val">4.08 / 5.00</span>
+                </div>
+                <div class="iso-meter-bg">
+                  <div class="iso-meter-fill" style="width: 81.6%;"></div>
+                </div>
+              </div>
+
+              <div class="iso-metric-row">
+                <div class="iso-metric-info">
+                  <span class="m-name">6. Maintainability</span>
+                  <span class="m-val">4.08 / 5.00</span>
+                </div>
+                <div class="iso-meter-bg">
+                  <div class="iso-meter-fill" style="width: 81.6%;"></div>
+                </div>
+              </div>
+
+              <div class="iso-metric-row">
+                <div class="iso-metric-info">
+                  <span class="m-name">7. Performance Efficiency</span>
+                  <span class="m-val">4.07 / 5.00</span>
+                </div>
+                <div class="iso-meter-bg">
+                  <div class="iso-meter-fill" style="width: 81.4%;"></div>
+                </div>
+              </div>
+
+              <div class="iso-metric-row">
+                <div class="iso-metric-info">
+                  <span class="m-name">8. Functional Suitability</span>
+                  <span class="m-val">4.06 / 5.00</span>
+                </div>
+                <div class="iso-meter-bg">
+                  <div class="iso-meter-fill" style="width: 81.2%;"></div>
+                </div>
+              </div>
+
+              <div class="iso-metric-row">
+                <div class="iso-metric-info">
+                  <span class="m-name">9. Usability</span>
+                  <span class="m-val">4.05 / 5.00</span>
+                </div>
+                <div class="iso-meter-bg">
+                  <div class="iso-meter-fill" style="width: 81.0%;"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Black-Box Verification & Outcomes -->
+          <div>
+            <div class="blackbox-card" style="margin-top: 0;">
+              <div class="bb-title-row">
+                <h3 style="margin: 0; font-size: 1.25rem;">Black-Box Verification</h3>
+                <span class="bb-pill">100% Pass Rate</span>
+              </div>
+              <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1rem;">
+                Conducted by 10 professional IT evaluators with 2–13 years industry experience across all defined test
+                scenarios:
+              </p>
+              <ul class="bb-list">
+                <li>Authentication and Role-Based Access Control (RBAC) integrity</li>
+                <li>MTO batch arrival data ingestion and validation filters</li>
+                <li>LARA NLP intent recognition, Taglish parsing, and fallback safety</li>
+                <li>VADER review sentiment scoring and trend calculation</li>
+                <li>PDF and CSV export generation under DOT compliance specs</li>
+              </ul>
+            </div>
+
+            <div class="scope-notice" style="margin-top: 1.5rem;">
+              <strong>Academic Rating Verbal Interpretation:</strong> The overall grand mean of <strong>4.08</strong>
+              corresponds to the verbal interpretation of <strong>"Acceptable"</strong>, indicating that the system
+              satisfies all operational, functional, and security demands of LTCATO and municipal tourism offices.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: RESEARCH TEAM & ADVISER -->
+    <section class="section" id="team">
+      <div class="wrap">
+
+        <div class="section-head text-center">
+          <span class="section-eyebrow">Academic Authors</span>
+          <h2>Research Team &amp; Institutional Partners</h2>
+          <p class="lede">
+            Undergraduate researchers from the College of Computer Studies, Laguna State Polytechnic University – Santa
+            Cruz Campus.
+          </p>
+        </div>
+
+        <div class="team-grid">
+
+          <div class="author-card">
+            <div class="author-avatar-initials">KC</div>
+            <h3>Kyle Sam B. Camunias</h3>
+            <span class="author-role">Lead Researcher</span>
+            <p class="author-institution">BS Information Technology, LSPU Santa Cruz<br>Kalayaan, Laguna, Philippines
+            </p>
+            <a href="mailto:camuniaskylesam97@gmail.com" class="author-email">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <span>camuniaskylesam97@gmail.com</span>
+            </a>
+          </div>
+
+          <div class="author-card">
+            <div class="author-avatar-initials">LC</div>
+            <h3>Lawrence T. Celis</h3>
+            <span class="author-role">Lead Researcher</span>
+            <p class="author-institution">BS Information Technology, LSPU Santa Cruz<br>Famy, Laguna, Philippines</p>
+            <a href="mailto:oyencelis@gmail.com" class="author-email">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <span>oyencelis@gmail.com</span>
+            </a>
+          </div>
+
+          <div class="author-card">
+            <div class="author-avatar-initials">MF</div>
+            <h3>Michelle A. Francia</h3>
+            <span class="author-role">Lead Researcher</span>
+            <p class="author-institution">BS Information Technology, LSPU Santa Cruz<br>Majayjay, Laguna, Philippines
+            </p>
+            <a href="mailto:michfrancia23@gmail.com" class="author-email">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <span>michfrancia23@gmail.com</span>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="institutional-panel">
+
+          <div class="partner-box">
+            <h4>Capstone Thesis Adviser</h4>
+            <p><strong>Dr. Mia V. Villarica, DIT</strong> — Associate Dean, College of Computer Studies, Laguna State
+              Polytechnic University – Santa Cruz Campus.</p>
+          </div>
+
+          <div class="partner-box">
+            <h4>Agency Partner &amp; Oral Defense Panel</h4>
+            <p><strong>Client Beneficiary:</strong> Laguna Tourism, Culture, Arts and Trade Office (LTCATO), Provincial
+              Capitol Compound, Santa Cruz, Laguna. Headed by Edgardo "Egay" Victorio (OIC) and Arnold Pany (Arrival
+              Monitoring).</p>
+            <p style="margin-top: 0.5rem; font-size: 0.86rem; color: var(--gold-dark); font-weight: 600;">
+              Oral Defense Evaluation Grades: 96%, 90%, 85%, 95%
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: DELIVERABLES & CITATION -->
+    <section class="section section-tint" id="links">
+      <div class="wrap">
+
+        <div class="section-head text-center">
+          <span class="section-eyebrow">Project Access</span>
+          <h2>Deliverables &amp; Research Access</h2>
+          <p class="lede">
+            Access the live production platform, source code repository, complete manuscript, and formal academic
+            citation.
+          </p>
+        </div>
+
+        <div class="deliverables-grid">
+
+          <a href="https://new-ltcato.vercel.app/" target="_blank" rel="noopener noreferrer" class="deliverable-link">
+            <div class="deliverable-icon-box">
+              <svg class="icon" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+            </div>
+            <h3>Live Production System</h3>
+            <p>Explore the deployed system live on Vercel with active spot filtering and arrival intake.</p>
+            <span class="link-arrow">new-ltcato.vercel.app &rarr;</span>
+          </a>
+
+          <a href="https://github.com/LTCATO/ltacato-revamp" target="_blank" rel="noopener noreferrer"
+            class="deliverable-link" data-link="repo">
+            <div class="deliverable-icon-box">
+              <svg class="icon" viewBox="0 0 24 24">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3>Source Code Repository</h3>
+            <p>Access the full stack frontend, Flask backend APIs, and database migrations on GitHub.</p>
+            <span class="link-arrow" data-url-text>View GitHub Repo &rarr;</span>
+          </a>
+
+          <a href="https://drive.google.com/file/d/1EINSy5REHtRd4Wc80K7U2DSOgbZMO-3i/view?usp=sharing " target="_blank"
+            rel="noopener noreferrer" class="deliverable-link" data-link="manuscript">
+            <div class="deliverable-icon-box">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+              </svg>
+            </div>
+            <h3>Capstone Manuscript</h3>
+            <p>Read the complete 5-chapter research document, survey instruments, and panel approvals.</p>
+            <span class="link-arrow">Read PDF Document &rarr;</span>
+          </a>
+
+          <a href="https://drive.google.com/file/d/1Uy9GlWVHqmr9lGYNR9UC6xep5RrxFOEV/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer" class="deliverable-link" data-link="video">
+            <div class="deliverable-icon-box">
+              <svg class="icon" viewBox="0 0 24 24">
+                <polygon points="23 7 16 12 23 17 23 7" />
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+              </svg>
+            </div>
+            <h3>System Video Demo</h3>
+            <p>Watch a complete video walkthrough demonstrating the four stakeholder workflows.</p>
+            <span class="link-arrow">Watch Video Walkthrough &rarr;</span>
+          </a>
+
+        </div>
+
+        <!-- Citation Box -->
+        <div class="citation-block">
+          <div class="citation-bar">
+            <span class="citation-label">Cite This Research (APA 7th Edition)</span>
+            <button class="btn btn-secondary btn-sm" id="btnCopyCite">
+              <svg class="icon" viewBox="0 0 24 24">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+              </svg>
+              <span>Copy Citation</span>
+            </button>
+          </div>
+          <p class="citation-quote" id="citeText">
+            Camunias, K. S. B., Celis, L. T., &amp; Francia, M. A. (2026). <em>LagunaGuide: An integrated web-based
+              tourism promotion, tourist monitoring, and decision support system with NLP-based multi-stakeholder
+              chatbots for LTCATO</em> (Undergraduate Capstone Project, Laguna State Polytechnic University). Santa
+            Cruz, Laguna, Philippines.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+
+      <div class="footer-main-grid">
+        <div>
+          <div class="footer-brand-lockup">
+            <img src="assets/images/ltcato-logo.png" alt="LTCATO Logo" width="36" height="36"
+              style="border-radius: 50%; background: #fff; padding: 2px;">
+            <span class="footer-brand-title">LagunaGuide</span>
+          </div>
+          <p class="footer-about">
+            A collaborative public service technology project between the <strong>College of Computer Studies, Laguna
+              State Polytechnic University – Santa Cruz Main Campus</strong> and the <strong>Laguna Tourism, Culture,
+              Arts and Trade Office (LTCATO)</strong>, Provincial Capitol Compound, Santa Cruz, Laguna.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#overview">System Overview</a></li>
+            <li><a href="#methodology">Research Methodology</a></li>
+            <li><a href="#system">Showcase Gallery</a></li>
+            <li><a href="#results">Evaluation Results</a></li>
+            <li><a href="#team">Research Team</a></li>
+            <li><a href="#links">Deliverables</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Institutional Address</h4>
+          <p class="footer-contact-text">
+            <strong>Provincial Office:</strong> LTCATO, Provincial Capitol Compound, Santa Cruz, 4009 Laguna,
+            Philippines
+          </p>
+          <p class="footer-contact-text">
+            <strong>Academic Institution:</strong> LSPU Santa Cruz Main Campus, Brgy. Bubukal, Santa Cruz, Laguna
+          </p>
+          <p class="footer-contact-text">
+            <strong>Lead Contact:</strong> oyencelis@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-line">
+        <div>&copy; 2026 LagunaGuide Capstone Project. All Rights Reserved.</div>
+        <div>Engineered for the 30 Local Government Units of the Province of Laguna.</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Lightbox Dialog (Uncropped Full Image Viewer) -->
+  <dialog class="lightbox-dialog" id="lightbox">
+    <div class="lightbox-window">
+      <div class="lightbox-topbar">
+        <p class="lightbox-caption-text" id="lbTitle">Interface Screenshot</p>
+        <button type="button" class="lightbox-close-btn" id="lbClose" aria-label="Close dialog">
+          <span>Close</span>
+          <svg class="icon" viewBox="0 0 24 24">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+      <div class="lightbox-image-stage">
+        <img src="" alt="" id="lbImg" class="lightbox-main-img">
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Toast Bubble -->
+  <div class="toast-bubble" id="toast">Citation copied to clipboard</div>
+
+  <!-- Scripts -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

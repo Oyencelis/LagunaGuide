@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" style="background:#fcf9f6; font-family:'Poppins', sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a0404"/>
+      <stop offset="100%" stop-color="#9b2c2c"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Browser Frame -->
+  <rect x="0" y="0" width="800" height="500" rx="10" fill="#ffffff" stroke="#e0d7cf" stroke-width="2"/>
+  <rect x="0" y="0" width="800" height="42" rx="10" fill="#f2ece6"/>
+  <circle cx="25" cy="21" r="6" fill="#ef4444"/>
+  <circle cx="45" cy="21" r="6" fill="#f59e0b"/>
+  <circle cx="65" cy="21" r="6" fill="#10b981"/>
+  <rect x="100" y="8" width="500" height="26" rx="6" fill="#ffffff" stroke="#ddd3ca"/>
+  <text x="120" y="25" font-size="12" fill="#66534e">https://new-ltcato.vercel.app/explore — Laguna Tourism Portal</text>
+
+  <!-- Site Nav -->
+  <rect x="0" y="42" width="800" height="56" fill="url(#headerGrad)"/>
+  <circle cx="36" cy="70" r="16" fill="#ffffff"/>
+  <text x="36" y="75" font-size="14" text-anchor="middle" font-weight="900" fill="#9b2c2c">L</text>
+  <text x="64" y="74" font-size="16" font-weight="700" fill="#ffffff">LagunaGuide</text>
+  <text x="175" y="74" font-size="10" fill="#f5c842" font-weight="600">LTCATO PROVINCIAL PORTAL</text>
+  <text x="540" y="74" font-size="13" fill="#ffffff">Destinations</text>
+  <text x="645" y="74" font-size="13" fill="#ffffff">Plan Trip</text>
+  <text x="720" y="74" font-size="13" fill="#ffffff">LARA AI</text>
+
+  <!-- Hero inside preview -->
+  <rect x="25" y="115" width="750" height="130" rx="10" fill="#9b2c2c"/>
+  <text x="50" y="155" font-size="22" font-weight="700" fill="#ffffff" font-family="'Libre Baskerville', serif">Discover the Heritage &amp; Wonder of Laguna</text>
+  <text x="50" y="180" font-size="13" fill="#fdf2d6">Explore 30 Municipalities, Enchanting Waterfalls, Sacred Heritage, and Local Flavors</text>
+  <rect x="50" y="198" width="380" height="34" rx="6" fill="#ffffff"/>
+  <text x="65" y="220" font-size="12" fill="#888888">🔍 Search spots (e.g. Pagsanjan Falls, Sampaloc Lake, Paete)...</text>
+  <rect x="440" y="198" width="100" height="34" rx="6" fill="#f5c842"/>
+  <text x="490" y="220" font-size="12" font-weight="700" fill="#2a0202" text-anchor="middle">Filter 30 LGUs</text>
+
+  <!-- Card Grid -->
+  <!-- Card 1 -->
+  <g transform="translate(25, 260)" filter="url(#shadow)">
+    <rect x="0" y="0" width="235" height="215" rx="8" fill="#ffffff" stroke="#eee3db"/>
+    <rect x="0" y="0" width="235" height="110" rx="8" fill="#4a0404"/>
+    <text x="117" y="65" font-size="28" text-anchor="middle" fill="#ffffff">🌊</text>
+    <rect x="12" y="12" width="75" height="20" rx="4" fill="#f5c842"/>
+    <text x="50" y="26" font-size="10" font-weight="700" fill="#2a0202" text-anchor="middle">Eco-Tourism</text>
+    <text x="14" y="135" font-size="14" font-weight="700" fill="#2a0202">Pagsanjan Falls</text>
+    <text x="14" y="153" font-size="11" fill="#776863">📍 Cavinti / Pagsanjan, Laguna</text>
+    <text x="14" y="175" font-size="11" fill="#9b2c2c" font-weight="600">⭐ 4.9 (1.2k reviews) • Open</text>
+    <rect x="14" y="188" width="207" height="20" rx="4" fill="#faf5f0"/>
+    <text x="117" y="202" font-size="10" font-weight="600" fill="#9b2c2c" text-anchor="middle">View Spot &amp; 360° Panorama →</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g transform="translate(282, 260)" filter="url(#shadow)">
+    <rect x="0" y="0" width="235" height="215" rx="8" fill="#ffffff" stroke="#eee3db"/>
+    <rect x="0" y="0" width="235" height="110" rx="8" fill="#166534"/>
+    <text x="117" y="65" font-size="28" text-anchor="middle" fill="#ffffff">⛪</text>
+    <rect x="12" y="12" width="65" height="20" rx="4" fill="#f5c842"/>
+    <text x="45" y="26" font-size="10" font-weight="700" fill="#2a0202" text-anchor="middle">Heritage</text>
+    <text x="14" y="135" font-size="14" font-weight="700" fill="#2a0202">Nagcarlan Underground</text>
+    <text x="14" y="153" font-size="11" fill="#776863">📍 Nagcarlan, Laguna</text>
+    <text x="14" y="175" font-size="11" fill="#166534" font-weight="600">⭐ 4.8 (840 reviews) • NHCP</text>
+    <rect x="14" y="188" width="207" height="20" rx="4" fill="#faf5f0"/>
+    <text x="117" y="202" font-size="10" font-weight="600" fill="#9b2c2c" text-anchor="middle">View Spot &amp; History →</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g transform="translate(540, 260)" filter="url(#shadow)">
+    <rect x="0" y="0" width="235" height="215" rx="8" fill="#ffffff" stroke="#eee3db"/>
+    <rect x="0" y="0" width="235" height="110" rx="8" fill="#b45309"/>
+    <text x="117" y="65" font-size="28" text-anchor="middle" fill="#ffffff">🛶</text>
+    <rect x="12" y="12" width="70" height="20" rx="4" fill="#f5c842"/>
+    <text x="47" y="26" font-size="10" font-weight="700" fill="#2a0202" text-anchor="middle">Recreation</text>
+    <text x="14" y="135" font-size="14" font-weight="700" fill="#2a0202">Lake Sampaloc Boardwalk</text>
+    <text x="14" y="153" font-size="11" fill="#776863">📍 San Pablo City, Laguna</text>
+    <text x="14" y="175" font-size="11" fill="#b45309" font-weight="600">⭐ 4.7 (950 reviews) • 7 Lakes</text>
+    <rect x="14" y="188" width="207" height="20" rx="4" fill="#faf5f0"/>
+    <text x="117" y="202" font-size="10" font-weight="600" fill="#9b2c2c" text-anchor="middle">Explore 7 Lakes Route →</text>
+  </g>
+</svg>

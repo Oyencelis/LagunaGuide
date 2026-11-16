@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" style="background:#fcf9f6; font-family:'Poppins', sans-serif;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="500" rx="10" fill="#ffffff" stroke="#e0d7cf" stroke-width="2"/>
+  <rect x="0" y="0" width="800" height="42" rx="10" fill="#f2ece6"/>
+  <circle cx="25" cy="21" r="6" fill="#ef4444"/>
+  <circle cx="45" cy="21" r="6" fill="#f59e0b"/>
+  <circle cx="65" cy="21" r="6" fill="#10b981"/>
+  <text x="100" y="25" font-size="12" fill="#66534e">Smart Itinerary Generator — Route Optimization &amp; Budget Planner</text>
+
+  <!-- Left: Filter / Config Column -->
+  <g transform="translate(25, 60)" filter="url(#shadow)">
+    <rect x="0" y="0" width="230" height="415" rx="10" fill="#ffffff" stroke="#e6ded6"/>
+    <rect x="0" y="0" width="230" height="40" rx="10" fill="#4a0404"/>
+    <text x="16" y="25" font-size="13" font-weight="700" fill="#ffffff">Trip Preferences</text>
+
+    <text x="16" y="65" font-size="11" font-weight="700" fill="#2a0202">Target LGUs / Districts</text>
+    <rect x="16" y="73" width="198" height="28" rx="6" fill="#faf7f5" stroke="#d5ccc4"/>
+    <text x="26" y="91" font-size="10" fill="#4a3f3a">District 4 (Santa Cruz, Cavinti)</text>
+
+    <text x="16" y="120" font-size="11" font-weight="700" fill="#2a0202">Trip Duration</text>
+    <rect x="16" y="128" width="198" height="28" rx="6" fill="#faf7f5" stroke="#d5ccc4"/>
+    <text x="26" y="146" font-size="10" fill="#4a3f3a">1 Full Day (8 Hours)</text>
+
+    <text x="16" y="175" font-size="11" font-weight="700" fill="#2a0202">Interests &amp; Vibes</text>
+    <rect x="16" y="185" width="85" height="22" rx="4" fill="#fdf2d6" stroke="#f5c842"/>
+    <text x="58" y="200" font-size="9" font-weight="700" fill="#2a0202" text-anchor="middle">Eco-Adventure</text>
+    <rect x="110" y="185" width="90" height="22" rx="4" fill="#fdf2d6" stroke="#f5c842"/>
+    <text x="155" y="200" font-size="9" font-weight="700" fill="#2a0202" text-anchor="middle">Local Food</text>
+
+    <rect x="16" y="215" width="95" height="22" rx="4" fill="#fdf2d6" stroke="#f5c842"/>
+    <text x="63" y="230" font-size="9" font-weight="700" fill="#2a0202" text-anchor="middle">Heritage Sites</text>
+
+    <text x="16" y="260" font-size="11" font-weight="700" fill="#2a0202">Target Budget</text>
+    <rect x="16" y="268" width="198" height="28" rx="6" fill="#faf7f5" stroke="#d5ccc4"/>
+    <text x="26" y="286" font-size="10" fill="#166534" font-weight="700">₱1,500 – ₱2,500 / person</text>
+
+    <rect x="16" y="320" width="198" height="38" rx="8" fill="#9b2c2c"/>
+    <text x="115" y="344" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">⚡ Generate Plan</text>
+    <text x="115" y="380" font-size="9" fill="#888888" text-anchor="middle">Optimal travel time calculation</text>
+  </g>
+
+  <!-- Right: Generated Timeline Column -->
+  <g transform="translate(275, 60)" filter="url(#shadow)">
+    <rect x="0" y="0" width="500" height="415" rx="10" fill="#ffffff" stroke="#e6ded6"/>
+    <rect x="0" y="0" width="500" height="40" rx="10" fill="#faf7f5"/>
+    <text x="20" y="26" font-size="13" font-weight="700" fill="#9b2c2c">Tailored Itinerary: "Eastern Laguna Highlands &amp; Waterfalls"</text>
+    <rect x="390" y="8" width="95" height="24" rx="4" fill="#166534"/>
+    <text x="437" y="24" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">Export PDF</text>
+
+    <!-- Timeline Item 1 -->
+    <circle cx="35" cy="80" r="14" fill="#9b2c2c"/>
+    <text x="35" y="85" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+    <line x1="35" y1="94" x2="35" y2="155" stroke="#9b2c2c" stroke-width="2" stroke-dasharray="3,3"/>
+    <rect x="60" y="65" width="420" height="65" rx="6" fill="#faf7f5" stroke="#eee3db"/>
+    <text x="75" y="85" font-size="12" font-weight="700" fill="#2a0202">08:00 AM — Breakfast at Santa Cruz Town Proper</text>
+    <text x="75" y="102" font-size="10" fill="#66534e">Try famous Kesong Puti (Carabao White Cheese) &amp; Bibingka de Macapuno</text>
+    <text x="75" y="118" font-size="10" fill="#166534" font-weight="600">Est. Cost: ₱150 • 45 mins stay</text>
+
+    <!-- Timeline Item 2 -->
+    <circle cx="35" cy="170" r="14" fill="#9b2c2c"/>
+    <text x="35" y="175" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+    <line x1="35" y1="184" x2="35" y2="245" stroke="#9b2c2c" stroke-width="2" stroke-dasharray="3,3"/>
+    <rect x="60" y="155" width="420" height="65" rx="6" fill="#faf7f5" stroke="#eee3db"/>
+    <text x="75" y="175" font-size="12" font-weight="700" fill="#2a0202">09:30 AM — Pagsanjan Gorge &amp; Shooting the Rapids</text>
+    <text x="75" y="192" font-size="10" fill="#66534e">Registered boatmen, life vest equipment, scenic canyon excursion</text>
+    <text x="75" y="208" font-size="10" fill="#166534" font-weight="600">Est. Cost: ₱1,200 • 2.5 hours stay</text>
+
+    <!-- Timeline Item 3 -->
+    <circle cx="35" cy="260" r="14" fill="#9b2c2c"/>
+    <text x="35" y="265" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+    <line x1="35" y1="274" x2="35" y2="335" stroke="#9b2c2c" stroke-width="2" stroke-dasharray="3,3"/>
+    <rect x="60" y="245" width="420" height="65" rx="6" fill="#faf7f5" stroke="#eee3db"/>
+    <text x="75" y="265" font-size="12" font-weight="700" fill="#2a0202">01:00 PM — Majayjay Taytay Falls &amp; Forest Picnic</text>
+    <text x="75" y="282" font-size="10" fill="#66534e">Mount Banahaw natural mountain spring and canopy trail walking</text>
+    <text x="75" y="298" font-size="10" fill="#166534" font-weight="600">Est. Cost: ₱50 entrance • 2 hours stay</text>
+
+    <!-- Timeline Item 4 -->
+    <circle cx="35" cy="350" r="14" fill="#9b2c2c"/>
+    <text x="35" y="355" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+    <rect x="60" y="335" width="420" height="65" rx="6" fill="#faf7f5" stroke="#eee3db"/>
+    <text x="75" y="355" font-size="12" font-weight="700" fill="#2a0202">04:00 PM — Nagcarlan Underground Cemetery Heritage Walk</text>
+    <text x="75" y="372" font-size="10" fill="#66534e">National Historical Commission of the Philippines (NHCP) landmark</text>
+    <text x="75" y="388" font-size="10" fill="#166534" font-weight="600">Est. Cost: Free Admission • 1 hour stay</text>
+  </g>
+</svg>
